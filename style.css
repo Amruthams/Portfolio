@@ -1,0 +1,697 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    /* font-family: 'Playfair Display', serif; */
+}
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* 1vh = 1% */
+    background-color: white;
+}
+
+
+/* ===============================   NAV BAR =========================================== */
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(28, 36, 44);
+    /* padding: 10px 10px; */
+}
+
+.menu-toggle {
+    display: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    /* margin: 0 10px; */
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(14, 14, 15);
+}
+
+nav h3 {
+    margin: 0;
+    color: rgb(191, 216, 233);
+}
+
+/* nav ul li {
+    display: inline-block;
+    margin: 10px 20px; */
+
+    /* margin-right: 20px; */
+    /* top-bottom = 10px , right-left = 20px */
+/* } */
+
+/* nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+} */
+
+/* nav ul li a:hover {
+    color: rgb(14, 14, 15);
+} */
+
+/* nav h3 {
+    margin-inline-start: 4rem;
+    color: rgb(191, 216, 233);
+
+} */
+
+/* ==================================  HOME  ================================================= */
+
+.home {
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.round-photo img {
+    position: absolute;
+    left: 25rem;
+    top: 5rem;
+    padding: 10rem 1rem;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 70%;
+
+}
+
+.name {
+    position: absolute;
+    left: 45rem;
+    top: 4rem;
+    padding: 13rem 1rem;
+
+
+}
+
+.name h2 {
+    color: orange;
+}
+
+.name h1 {
+
+    font-size: 30px;
+
+}
+
+.name h3 {
+    font-weight: 20;
+}
+
+.name a {
+    background-color: black;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+
+/* =================================================   ABOUT  ========================================================= */
+
+
+.about {
+    /* background-color: white; */
+    background-color: #f0f0f0;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3rem;
+    margin-right: 8%;
+    margin-top: 3%;
+    margin-left: 10%;
+
+
+    /* 2= 2 column, 1fr = 1 frame */
+}
+
+.heading {
+    font-size: 28px;
+    text-decoration: underline;
+    color: rgba(172, 114, 7, 0.875);
+    padding-top: 10%;
+    margin-right: 8%;
+    margin-left: 8%;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+
+
+}
+
+.about-me {
+    padding-top: 8%;
+    font-size: 25px;
+    font-weight: 15px;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.about-img img {
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-top: 6%;
+
+}
+
+
+/* ===========================================  SKILLS  ========================================================= */
+
+
+.skills {
+    /* background-color: white; */
+    background-color: #f0f0f0;
+    height: 100%;
+}
+
+.skill-content {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    margin: 3rem;
+    margin-right: 8%;
+    margin-top: 3%;
+    margin-left: 10%;
+
+
+    /* 2= 2 column, 1fr = 1 frame */
+}
+
+.heading {
+    font-size: 40px;
+    text-decoration: underline;
+    color: orange;
+    padding-top: 10%;
+    margin-right: 8%;
+    margin-left: 8%;
+
+
+}
+
+.abt-skill {
+    padding-top: 2%;
+    font-size: 20px;
+    font-weight: 15px;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+/* Create a container using css properties */
+.container-skill {
+    padding-top: 15%;
+    margin-left: 40%;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+/* Apply css properties to ui-widgets class */
+.ui-widgets {
+    /* position: relative;
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 9rem;
+    margin: 1.5rem;
+    border: 1.2rem solid rgb(251, 234, 152);
+    box-shadow: inset 0 0 7px grey;
+    border-left-color: rgb(251, 236, 152);
+    border-top-color: rgb(255, 225, 0);
+    border-right-color: rgb(203, 144, 18);
+    border-bottom-color: white;
+    text-align: center;
+    box-sizing: border-box; */
+
+    position: relative;
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 9rem;
+    margin: 1.5rem;
+    border: 1.2rem solid rgb(251, 234, 152);
+    box-shadow: inset 0 0 7px grey;
+    border-left-color: rgb(251, 236, 152);
+    border-top-color: rgb(255, 225, 0);
+    border-right-color: rgb(203, 144, 18);
+    border-bottom-color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Apply css properties to the second
+    child of ui-widgets class */
+.ui-widgets:nth-child(2) {
+    border-left-color: rgb(251, 236, 152);
+    border-top-color: rgb(255, 225, 0);
+    border-right-color: rgb(203, 144, 18);
+    border-bottom-color: white;
+}
+
+.ui-widgets:nth-child(3) {
+    border-left-color: rgb(251, 236, 152);
+    border-top-color: rgb(255, 225, 0);
+    border-right-color: rgb(203, 144, 18);
+    border-bottom-color: white;
+}
+
+.ui-widgets:nth-child(4) {
+    border-left-color: rgb(251, 236, 152);
+    border-top-color: rgb(255, 225, 0);
+    border-right-color: rgb(203, 144, 18);
+    border-bottom-color: white;
+}
+
+.ui-widgets:nth-child(5) {
+    border-left-color: rgb(251, 236, 152);
+    border-top-color: rgb(255, 225, 0);
+    border-right-color: rgb(203, 144, 18);
+    border-bottom-color: white;
+}
+
+/* Apply css properties to ui-widgets
+   class and ui-values class */
+.ui-widgets .ui-values {
+    top: 30px;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/*  Apply css properties to ui-widgets 
+class and ui-labels class */
+.ui-widgets .ui-labels {
+    left: 0;
+    bottom: -16px;
+    text-shadow: 0 0 4px rgb(151, 148, 122);
+    color: black;
+    position: absolute;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+/* =================================================  EDUCATION  ============================================================= */
+
+/* Education section styles */
+#education {
+    background-color: #f0f0f0;
+    /* padding: 40px; */
+    /* background-color: white; */
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+#education h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #333333;
+}
+
+/* Grid layout styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin: 3rem;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.grid-item {
+    position: relative;
+    padding: 30px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    padding-top: 2%;
+    color: #333333;
+}
+
+.grid-item .p1 {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-top: 2%;
+    color: #666666;
+}
+
+.grid-item p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #666666;
+}
+
+.grid-item span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+}
+
+/* .grid-item:nth-child(1) span {
+     background-color:#ff9900; 
+     clip-path:polygon(50% 0%,100%50%,50%100%,0%50%); 
+  }
+  
+  .grid-item:nth-child(2) span {
+     background-color:#0099ff; 
+     clip-path:polygon(50%0%,100%25%,75%100%,25%100%,0%25%); 
+  }
+  
+  .grid-item:nth-child(3) span {
+     background-color:#66cc66; 
+     clip-path:polygon(50%0%,100%0%,100%50%,50%100%,0%50%,0%0%); 
+  }  */
+
+
+/* ===========================================  CONTACT  =================================================== */
+
+
+
+
+.container-contact {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+}
+
+.Connect{
+        position: absolute;
+        top: 35%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        color: rgb(197, 136, 24);
+        padding-top: 5%;
+        margin-right: 8%;
+        margin-left: 8%;
+        
+}
+
+/* .border{
+    border: 2px solid black;
+    border-width: 2px;
+    border-right: 20px;
+} */
+
+
+/* to get items to centre in a row */
+.iconDiv {
+    
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+   
+
+}
+
+.icon {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  
+}
+
+.icon a {
+  color: black;
+  text-decoration: none;
+}
+
+.icon i {
+  font-size: 40px;
+}
+
+.icon:hover a {
+  color: white;
+}
+
+.icon:hover i {
+  color: blue;
+}
+
+.icon1{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.icon1 span{
+    color: rgb(197, 136, 24);
+}
+
+
+footer {
+    margin-top: 1px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+
+
+
+
+/* .bg img {
+    display: block;
+    width: 100%;
+    height: 85vh;
+} */
+
+/* .content {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(113, 78, 12);
+    padding-top: 10%;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+.h3-connect{
+
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(68, 47, 9);
+    padding-top: 10%;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+ */
+
+
+
+ /* ======================================  MEDIA QUERY  ================================================ */
+
+ @media (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav.open ul {
+        display: flex;
+    }
+
+    .round-photo img{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 4rem;
+
+    }
+
+    .name{
+        position: absolute;
+        left: 18rem;
+       
+
+    }
+    .name h2{
+        font-size: 20px;
+    }
+    .name h1{
+        font-size: 18px;
+    }
+     .name h3{
+        font-size: 15px;
+     }
+
+     .name a{
+        padding: 5px;
+     }
+
+     /* ======================= */
+
+     .about{
+        height: 80%;
+     }
+
+     .about-content{
+        grid-template-columns: repeat(1, 1fr);
+     }
+
+     .heading{
+        font-size: 25px;
+        margin-left: 45%;
+        
+     }
+
+     .about-me{
+        font-size: 20px;
+     }
+
+     .about-img img{
+        width: 50%;
+        
+     }
+     /* =========================================== */
+
+     .skills{
+        height: 80%;
+     }
+     .abt-skill{
+        padding-top: 6%;
+        font-size: 20px;
+     }
+
+     .container-skill{
+        margin-left: 30%;
+       
+     }
+     .ui-widgets{
+        width: 6rem;
+        height: 6rem;
+        margin: 1rem;
+        /* border-radius: 100; */
+        /* margin-top: 10rem; */
+        
+     }
+     .ui-widgets .ui-labels{
+        font-size: 14px;
+     }
+     .ui-widgets .ui-values{
+        font-size: 1rem;
+     }
+
+     /* ====================================== */
+
+     #education{
+        height: 100%;
+     }
+
+     .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+       
+     }
+     .grid-item{
+        padding: 10px;
+     }
+
+     .grid-item h3{
+        font-size: 18px;
+     }
+     .grid-item .p1{
+        font-size: 15px;
+     }
+     .grid-item p{
+        font-size: 15px;
+     }
+     .grid-item span{
+        font-size: 15px;
+     }
+
+     /* ======================= */
+     .container-contact{
+        height: 60vh;
+     }
+
+     .Connect{
+        top: 22%;
+        left: 45%;
+        font-size: 20px;
+     }
+
+     .iconDiv{
+        margin-top: 15%;
+        gap: 10px;
+        margin-left: 10%;
+     }
+     .icon1{
+        margin-left: 10%;
+     }
+     footer {
+        margin-top: 10px;
+        font-weight: bolder;
+        font-size: 5px;
+    }
+
+    
+
+}
