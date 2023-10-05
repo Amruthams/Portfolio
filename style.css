@@ -40,6 +40,12 @@ nav {
     cursor: pointer;
     font-size: 1.5em;
 }
+
+.nav-links.active {
+    display: block;
+  }
+
+
 nav ul {
     display: flex;
     list-style: none;
@@ -617,13 +623,20 @@ button:hover {
         display: block;
     }
 
+    .nav-links.active {
+        display: flex; /* Show the navigation links as a column when active */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
     nav ul {
         display: none;
         flex-direction: column;
     }
 
     nav ul li {
-        margin: 10px 5px;
+        margin: 10px 0;
     }
 
     nav.open ul {
