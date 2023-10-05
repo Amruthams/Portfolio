@@ -70,7 +70,7 @@ nav ul li a:hover {
 }
 
 nav h3 {
-    margin: 0;
+    margin-left: 10px;
     color: rgb(191, 216, 233);
 }
 
@@ -496,7 +496,7 @@ class and ui-labels class */
 }
 
 .icon i {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .icon:hover a {
@@ -689,11 +689,13 @@ button:hover {
         grid-template-columns: repeat(1, 1fr);
      }
 
-     /* .heading{
+     .heading{
         font-size: 25px;
         margin-left: 45%;
         
-     } */
+        
+     }
+     
 
      .about-me{
         font-size: 20px;
@@ -724,7 +726,9 @@ button:hover {
      .ui-widgets{
         width: 6rem;
         height: 6rem;
-        margin: 1rem;
+        margin: 10px;
+        margin-left: 1px;
+        margin-right: 2px;
         /* border-radius: 100; */
         /* margin-top: 10rem; */
         
@@ -745,6 +749,7 @@ button:hover {
      .grid-container{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
+        margin-top: 10%;
        
      }
      .grid-item{
