@@ -22,6 +22,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    
     z-index: 10;
 }
 
@@ -49,8 +50,9 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 2px;
+    padding: 10px 2px;
+
 }
 
 nav ul li {
@@ -624,15 +626,17 @@ button:hover {
     }
 
     .nav-links.active {
-        display: flex; /* Show the navigation links as a column when active */
-        flex-direction: column;
+        display: flex; 
+         /* Show the navigation links as a column when active */
+         flex-direction: column;
         align-items: center;
         width: 100%;
-      }
+      }  
 
     nav ul {
         display: none;
         flex-direction: column;
+        padding: 10px 2px;
     }
 
     nav ul li {
@@ -654,14 +658,14 @@ button:hover {
         width: 200px;
         height: 200px;
         left: 4rem;
-        top: -1rem;
+        top: -2rem;
 
     }
 
     .name{
         position: absolute;
         left: 18rem;
-        top: -2rem;
+        top: -3rem;
        
 
     }
